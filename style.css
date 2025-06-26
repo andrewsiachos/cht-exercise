@@ -1,0 +1,203 @@
+* {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(270, 20%, 96%);
+}
+
+#leftColor {
+  width: 420px;
+  height: 500px;
+  background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 0 0 300px 300px;
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+
+main {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #centeredWhiteDiv {
+  width: 130px;
+  height: 20px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 3;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 20px 20px;
+}
+main #phone {
+  width: 306px;
+  padding: 0 9px 9px 9px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+}
+main #phone #user {
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 20px 20px 10px 10px;
+  padding: 28px 16px 5px 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+main #phone #user #userDetails {
+  display: flex;
+  align-items: center;
+  width: 88%;
+  margin-left: 5px;
+}
+main #phone #user #userDetails img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 4px;
+}
+main #phone #user #userDetails h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+main #phone #user #userDetails p {
+  color: hsl(276, 100%, 81%);
+  font-size: 9px;
+}
+main #phone #user #threeDots .dot {
+  width: 2px;
+  height: 2px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+main #phone #user #threeDots .dot:not(:first-child) {
+  margin-top: 3px;
+}
+main #phone #phoneBody {
+  background-color: hsl(270, 20%, 96%);
+  padding: 9px 9px 90px 9px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  width: 100%;
+  top: -5px;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+main #phone #phoneBody .leftMessageContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+main #phone #phoneBody .leftMessageContainer .leftMessage {
+  background-color: hsl(277, 91%, 86%);
+  color: hsl(276, 55%, 52%);
+  padding: 9px;
+  font-size: 9px;
+  border-radius: 10px 10px 10px 5px;
+  max-width: 55%;
+}
+main #phone #phoneBody .leftMessageContainer .leftRadio {
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  border-radius: 20px 20px 20px 10px;
+}
+main #phone #phoneBody .leftMessageContainer .leftRadio input {
+  display: block;
+  margin-right: 10px;
+}
+main #phone #phoneBody .leftMessageContainer .leftRadio p {
+  color: hsl(0, 0%, 100%);
+  font-size: 9px;
+  margin-right: 10px;
+}
+main #phone #phoneBody .leftMessageContainer .leftRadio h3 {
+  color: white;
+}
+main #phone #phoneBody .rightMessageContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+main #phone #phoneBody .rightMessageContainer .rightMessageImages {
+  display: flex;
+}
+main #phone #phoneBody .rightMessageContainer .rightMessageImages img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+main #phone #phoneBody .rightMessageContainer .rightMessage {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  padding: 9px;
+  font-size: 9px;
+  border-radius: 10px 10px 5px 10px;
+  max-width: 55%;
+}
+main #phone #userInputContainer {
+  background-color: hsl(0, 0%, 100%);
+  position: fixed;
+  bottom: 25px;
+  left: 20px;
+  width: 256px;
+  padding: 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+main #phone #userInputContainer input {
+  display: block;
+  width: 90%;
+  margin-right: 15px;
+  border: none;
+}
+main #phone #userInputContainer input:focus {
+  outline: none;
+}
+main #phone #userInputContainer #submit {
+  background-color: hsl(271, 36%, 24%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+}
+main #appDetails {
+  width: 55%;
+}
+main #appDetails h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+main #appDetails p {
+  margin-top: 30px;
+  color: hsl(270, 7%, 64%);
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */
