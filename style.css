@@ -25,7 +25,7 @@ body {
 
 main {
   position: absolute;
-  top: 200px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 57%;
@@ -200,4 +200,45 @@ main #appDetails p {
   margin-top: 30px;
   color: hsl(270, 7%, 64%);
   font-size: 0.9rem;
+}
+
+footer {
+  position: absolute;
+  top: 800px;
+  width: 100%;
+  text-align: center;
+}
+footer a, footer a:visited {
+  color: hsl(293, 100%, 63%);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    top: 50px;
+  }
+  main #phone {
+    width: 90%;
+  }
+  main #phone #phoneBody .leftMessageContainer .leftMessage {
+    font-size: 11px;
+  }
+  main #phone #phoneBody .rightMessageContainer .rightMessage {
+    font-size: 11px;
+  }
+  main #phone #userInputContainer {
+    bottom: 34%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-51%);
+  }
+  main #appDetails {
+    margin-top: 100px;
+  }
+  footer {
+    top: 1000px;
+  }
 }/*# sourceMappingURL=style.css.map */

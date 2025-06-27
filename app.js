@@ -19,8 +19,8 @@ submit.addEventListener('click', ()=>{
         userInput.value = '';
     }
 
-    phoneBody.scrollTo({
-        top: '20px',
-        behavior: smooth
+    phoneBody.scroll({
+        top: 100,
+        behavior: 'smooth'
     })
 });
